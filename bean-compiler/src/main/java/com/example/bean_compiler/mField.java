@@ -2,10 +2,6 @@ package com.example.bean_compiler;
 
 import javax.lang.model.type.TypeMirror;
 
-/**
- * Created by Administrator on 2017/3/1 0001.
- */
-
 public class mField {
     private String value;
     private String name;

@@ -8,11 +8,16 @@ import com.example.bean_annotion.Name;
 
 import java.util.List;
 
+/**
+ * @Name 注解是生成 JavaBean 的类名
+ * @Filed 是生成 JavaBean 中所包含的属性，一个类仅生成一个 Bean。
+ */
+
 @Name("Bean")
 public class MainActivity extends Activity {
 	
-	@Filed("Names")
-	String name;
+	@Filed("Name")
+	String name = "Init";
 	
 	@Filed("List")
 	List<String> mlist;
@@ -26,6 +31,6 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		
 		Bean main = new Bean();
-		main.setName("你好啊");
+		main.setName(name);
 	}
 }
